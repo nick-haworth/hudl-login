@@ -1,5 +1,7 @@
 # Getting started
 
+I created this framework using [WebdriverIo v7](https://webdriver.io/) and written in Typescript
+
 ## Node and package manager
 
 Make sure to setup [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
