@@ -20,12 +20,15 @@ HUDL_PASSWORD=""
 ## Running tests
 
 You can run the tests both Chrome and Firefox by running:
+
 `npm run wdio`
 
-You can also specify just a single browser by running (only chrome and firefox are currently available):
+You can also specify just a single browser by running (only chrome and firefox sare currently available):
+
 `BROWSER=chrome npm run wdio`
 
 ## Creating Reports
 
 After the test suite, you can run the command below to create and view the report for that run
+
 `npm run openReport`
