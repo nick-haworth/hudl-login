@@ -35,8 +35,8 @@ After the test suite, you can run the command below to create and view the repor
 
 ## Notes
 
-Things I would have liked to add if I had more time
+Things I would have added if I had more time
 * Complete the commented out scenarios
 * Incorporate a crossbrowser integration with Saucelabs
-* Added [https://www.npmjs.com/package/@types/axe-core](axe-core) for accessibility 
-* Add [https://www.npmjs.com/package/lighthouse](lighthouse) to test frontend performance score
+* Add [axe-core](https://www.npmjs.com/package/@types/axe-core) for accessibility 
+* Add [lighthouse](https://www.npmjs.com/package/lighthouse) to test frontend performance score
