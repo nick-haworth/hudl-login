@@ -21,7 +21,7 @@ export const config: Options.Testrunner = {
     autoCompile: true,
     tsNodeOpts: {
       transpileOnly: true,
-      project: 'test/tsconfig.json'
+      project: 'config/tsconfig.json'
     }
   },
   specs: [

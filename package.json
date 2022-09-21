@@ -23,7 +23,7 @@
     "wdio-rerun-service": "^1.7.6"
   },
   "scripts": {
-    "wdio": "wdio run test/wdio.conf.ts --cucumberOpts.retry=3",
+    "wdio": "wdio run ./config/wdio.conf.ts --cucumberOpts.retry=3",
     "openReport": "open ./results/report/index.html",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
   },
