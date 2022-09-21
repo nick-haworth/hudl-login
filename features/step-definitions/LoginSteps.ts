@@ -7,10 +7,6 @@ Given(/^I am on the login page$/, async () => {
   await loginPage.loadPage()
 })
 
-Given(/^I am on the login page on (.*)$/, async (device: string) => {
-  await loginPage.loadPage(device)
-})
-
 When(/^I login with correct credentials$/, async () => {
   loginPage.username = process.env.HUDL_USERNAME || ''
   loginPage.password = process.env.HUDL_PASSWORD || ''
@@ -52,15 +48,6 @@ Then(/^I should see my account$/, async () => {
   await expect(homePage.globalDisplayName).toBeDisplayed()
   await expect(homePage.globalDisplayName).toHaveText('Nick H')
   await expect(homePage.globalLogout).toBeDisplayed()
-})
-
-Then(/^I should see my account on mobile$/, async () => {
-  await homePage.mobileMenuToggle.click()
-
-  await expect(homePage.globalUserEmail).not.toBeDisplayed()
-  await expect(homePage.globalDisplayName).toBeDisplayed()
-  await expect(homePage.globalDisplayName).toHaveText('Nick H')
-  await expect(homePage.mobileGlobalLogout).toBeDisplayed()
 })
 
 Then(/^I should still be on the log in page$/, async () => {
