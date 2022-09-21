@@ -1,0 +1,20 @@
+[
+  {
+    "browserName": "firefox",
+    "acceptInsecureCerts": true,
+    "cjson:metadata": {
+      "browser": {
+          "name": "firefox"
+      }
+    }
+  },
+  {
+    "browserName": "chrome",
+    "acceptInsecureCerts": true,
+    "cjson:metadata": {
+      "browser": {
+          "name": "chrome"
+      }
+    }
+  }
+]
