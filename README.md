@@ -2,7 +2,7 @@
 
 ## Node and package manager
 
-Make sure to setup [https://github.com/nvm-sh/nvm#installing-and-updating](nvm).
+Make sure to setup [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 Please check the `.nvmrc` file for the node version. Running `nvm use` from the root will set the correct node version.
 
