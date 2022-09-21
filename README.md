@@ -40,5 +40,6 @@ After the test suite run finishes, you can run the command below to create and v
 Things I would have added if I had more time
 * Complete the commented out scenarios
 * Incorporate a crossbrowser integration with Saucelabs
+* Integrate with CircleCi for continuous integration
 * Add [axe-core](https://www.npmjs.com/package/@types/axe-core) for accessibility 
 * Add [lighthouse](https://www.npmjs.com/package/lighthouse) to test frontend performance score
