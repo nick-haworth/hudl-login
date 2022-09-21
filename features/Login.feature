@@ -1,53 +1,33 @@
 Feature: Hudl Login Functionality
 
-  Scenario: As a user, I can log in to view my hudl account
+  Background:
     Given I am on the login page
+
+  Scenario: As a user, I can log in to view my hudl account
     When I login with correct credentials
     Then I should see my account
-
-  Scenario: As a user, I can log in to view my hudl account on a mobile view
-    Given I am on the login page on mobile
-    When I login with correct credentials
-    Then I should see my account on mobile
  
   Scenario:As a user, I am notified when I unsuccessfully sign in
-    Given I am on the login page
     When I login with incorrect credentials
     Then I should still be on the log in page
     And I should see the error message "We didn't recognize that email and/or password"
     And I should see the need help? link
 
   Scenario: As a user, I am notified when I unsuccessfully sign in with incorrect email
-    Given I am on the login page
     When I login without an email
     Then I should see the error message "We didn't recognize that email and/or password"
     And I should see the need help? link
 
   Scenario: As a user, I am notified when I unsuccessfully sign in with incorrect password
-    Given I am on the login page
     When I login without a password
     Then I should see the error message "We didn't recognize that email and/or password"
     And I should see the need help? link
   
-  Scenario: As a user, I am notified when I unsuccessfully sign in on a mobile view
-    Given I am on the login page on mobile
-    When I login with incorrect credentials
-    Then I should still be on the log in page
-    Then I should see the error message "We didn't recognize that email and/or password"
-    And I should see the need help? link
-
   Scenario: As a user, I can navigate to need help
-    Given I am on the login page
-    When I click on need link
-    Then I can see reset password form
-
-  Scenario: As a user on mobile, I can navigate to need help
-    Given I am on the login page on mobile
     When I click on need link
     Then I can see reset password form
 
   Scenario: As a user, I can log in and my log in is remembered
-    Given I am on the login page
     When I select remember me
     And I login with correct credentials
     Then I should see my account
