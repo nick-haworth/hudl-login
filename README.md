@@ -32,3 +32,11 @@ You can also specify just a single browser by running (only chrome and firefox s
 After the test suite, you can run the command below to create and view the report for that run
 
 `npm run openReport`
+
+## Notes
+
+Things I would have liked to add if I had more time
+* Complete the commented out scenarios
+* Incorporate a crossbrowser integration with Saucelabs
+* Added axe-matchers for accessibility
+* Add lighthouse to test frontend performance score

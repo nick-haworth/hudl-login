@@ -9,7 +9,7 @@ class HomePage extends Page {
   get mobileGlobalLogout() { return $('.hui-globaladditionalitems--phone [data-qa-id="webnav-usermenu-logout"]') }
   get mobileMenuToggle() { return $('.hui-webnav--menu-closed .hui-secondarynav__open-menu') }
 
-  async loadPage(device: string = 'desktop') { return super.loadPage('home', device) }
+  async loadPage(device = 'desktop') { return super.loadPage('home', device) }
 }
 
 export default new HomePage()

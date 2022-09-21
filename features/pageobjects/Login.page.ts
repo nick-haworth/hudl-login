@@ -1,8 +1,8 @@
 import Page from './Page'
 
 class LoginPage extends Page {
-  private _username: string = ''
-  private _password: string = ''
+  private _username = ''
+  private _password = ''
 
   get username(): string { return this._username }
   set username(value: string) { this._username = value }
@@ -23,7 +23,7 @@ class LoginPage extends Page {
     await this.btnSubmit.click()
   }
 
-  async loadPage(device: string = 'desktop') { return super.loadPage('login', device) }
+  async loadPage(device = 'desktop') { return super.loadPage('login', device) }
 }
 
 export default new LoginPage()

@@ -64,7 +64,7 @@ Then(/^I should see my account on mobile$/, async () => {
 })
 
 Then(/^I should still be on the log in page$/, async () => {
-  let url: string = await browser.getUrl()
+  const url: string = await browser.getUrl()
 
   expect(url).toEqual('https://www.hudl.com/login')
 })
@@ -79,10 +79,10 @@ Then(/^I should see the need help\? link$/, async () => {
 })
 
 Then(/^I should be remembered$/, async () => {
-  let cookie: Array<object> = await browser.getCookies('ident')
-  let cookieExpiry: number = await cookie[0]['expiry']
-  let today: Date = new Date()
-  let tomorrowsTimestamp: number = Math.floor(today.setDate(today.getDate() + 1) / 1000)
+  const cookie: Array<object> = await browser.getCookies('ident')
+  const cookieExpiry: number = await cookie[0]['expiry']
+  const today: Date = new Date()
+  const tomorrowsTimestamp: number = Math.floor(today.setDate(today.getDate() + 1) / 1000)
 
   expect(cookieExpiry).toBeDefined()
   expect(cookieExpiry).toBeGreaterThan(tomorrowsTimestamp)
